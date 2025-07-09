@@ -1,5 +1,5 @@
 fetch('data.json')
-.then(response => response.json())
+.then(Response => Response.json())
 .then(data => {
     const profileDiv = document.getElementById('profile');
     profileDiv.innerHTML = `<p><strong>Name:</strong> ${data.name}</p>
@@ -7,5 +7,5 @@ fetch('data.json')
     <p><strong>Age:</strong> ${data.age}</p>`;
 })
 .catch(error => {
-    console.error('Error loading JSON:',error);
+    console.error('Error loading JSON:', error);
 });
